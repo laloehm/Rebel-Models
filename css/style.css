@@ -73,6 +73,10 @@
     top: 20px;
 }
 
+#nav-icon.open {
+    background: transparent;
+}
+
 #nav-icon.open span:nth-child(1) {
     top: 18px;
     -webkit-transform: rotate(135deg);
