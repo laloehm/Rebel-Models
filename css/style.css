@@ -33,8 +33,8 @@
     -o-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
     cursor: pointer;
-    right: 20px;
-    top: 20px;
+    right: 90px;
+    top: 68px;
     z-index: 1060;
 }
 
@@ -135,7 +135,8 @@
     color: #dd0909;
 }
 
-body {
+section,
+#nav-icon {
     background: #f4fae9;
 }
 
@@ -143,17 +144,20 @@ body {
     height: 100vh;
 }
 
-.home h1 {
-    font-family: 'Model', serif;
-    font-size: 130px;
-    position: absolute;
-    top: 0;
-    left: 48%;
-    z-index: 1;
+.home .box {
+    position: relative;
+    width: 40%;
+    padding: 0 3rem;
 }
 
-.home img.text {
-    width: 33%;
+.home h1 {
+    font-family: 'Model',
+        serif;
+    font-size: 100px;
+    position: absolute;
+    top: -70px;
+    left: 42%;
+    z-index: 1;
 }
 
 .about video,
@@ -211,7 +215,7 @@ body {
 
 .contacto .btn {
     background: #dd0909;
-    color: black;
+    color: #fff;
     width: 100%;
     border: none;
     padding: 10px;
@@ -222,16 +226,26 @@ body {
 }
 
 @media(max-width: 991px) {
-    .home img.text {
+    /* .home img.text {
         width: 630px;
+    } */
+
+    .home .box {
+        width: 100%;
+        padding: 0 1rem;
     }
 }
 
 
 @media(max-width: 767px) {
+    #nav-icon {
+        right: 30px;
+        top: 30px;
+    }
+
     .home h1 {
         font-size: 110px;
-        top: 0px;
+        top: -80px;
         left: 40%;
     }
 
@@ -253,6 +267,6 @@ body {
     }
 
     #modalMenu ul li a {
-        font-size: 40px;
+        font-size: 30px;
     }
 }

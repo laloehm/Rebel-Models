@@ -14,7 +14,7 @@
     <title>Rebel Models</title>
 </head>
 
-<body>
+<body class="px-md-5">
     <div class="nav">
         <div class="icon" id="nav-icon" data-toggle="modal" data-target="#modalMenu">
             <span></span>
@@ -22,26 +22,28 @@
             <span></span>
         </div>
     </div>
-    <section class="home d-flex justify-content-center align-items-center">
-        <h1 class="fadeIn wow" data-wow-delay="2s">A</h1>
-        <img src="images/Text-Rebel.png" class="img-fluid text wow fadeIn" data-wow-duration="2s" alt="">
+    <section class="home d-flex justify-content-center align-items-center mb-5 my-md-5">
+        <div class="box">
+            <h1 class="fadeIn wow" data-wow-delay="2s">A</h1>
+            <img src="images/Text-Rebel.png" class="img-fluid text wow fadeIn" data-wow-duration="2s" alt="">
+        </div>
     </section>
     <!--  -->
-    <section class="about py-5" id="nosotros">
+    <section class="about py-5 mb-5 my-md-5" id="nosotros">
         <div class="container">
             <div class="row">
                 <div class="col-lg-7 d-flex justify-content-center align-items-center px-5 wow fadeInLeft">
                     <img src="images/Quienes.png" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-5 px-md-5 mt-5 mt-lg-0 wow fadeInRight">
-                    <video src="video/video-1.mp4" autoplay muted loop></video>
+                    <video src="video/video-1.mp4" autoplay muted loop playsinline></video>
                 </div>
             </div>
         </div>
     </section>
 
     <!--  -->
-    <section class="concepto py-5" id="concepto">
+    <section class="concepto py-5 mb-5 my-md-5" id="concepto">
         <div class="container">
             <div class="row">
                 <div class="col-lg-1 wow fadeInLeft">
@@ -50,23 +52,25 @@
                 </div>
                 <div class="col-lg-11 d-flex flex-column wow fadeIn">
                     <h2>R<span>E</span>BEL</h2>
+                    <h2 class="d-block d-md-none">REBEL</h2>
+                    <h2 class="d-block d-md-none">REB<span>EL</span></h2>
                     <div class="row mt-md-4 mb-md-5">
                         <div class="col-lg-4 p-0 d-none d-lg-flex flex-column justify-content-center align-items-start">
                             <p><span>R</span>E</p>
                             <p>RE</p>
                         </div>
                         <div class="col-lg-8 p-0">
-                            <video src="video/video-2.mp4" autoplay muted loop></video>
+                            <video src="video/video-2.mp4" autoplay muted loop playsinline></video>
                         </div>
                     </div>
-                    <h2>REB<span>EL</span></h2>
+                    <h2 class="d-none d-md-block">REB<span>EL</span></h2>
                 </div>
             </div>
         </div>
     </section>
 
     <!--  -->
-    <section class="contacto py-5 wow fadeInUp" id="contacto">
+    <section class="contacto py-5 wow fadeInUp my-md-5" id="contacto">
         <div class="container">
             <div class="row">
                 <div class="col-12 pr-md-5 d-lg-none">
@@ -113,7 +117,7 @@
                 <div class="modal-body">
                     <ul>
                         <li><a href="#nosotros" data-toggle="modal" data-target="#modalMenu" class="smooth">Nosotros</a></li>
-                        <li><a href="#concepto" data-toggle="modal" data-target="#modalMenu" class="smooth">Conceptos</a></li>
+                        <li><a href="#concepto" data-toggle="modal" data-target="#modalMenu" class="smooth">Concepto</a></li>
                         <li><a href="#contacto" data-toggle="modal" data-target="#modalMenu" class="smooth">Contacto</a></li>
                     </ul>
                 </div>
