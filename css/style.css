@@ -104,15 +104,38 @@
 
 #modalMenu ul li {
     list-style: none;
+    transition: ease .5s;
+    -webkit-transition: ease .5s;
+    -moz-transition: ease .5s;
+    -ms-transition: ease .5s;
+    -o-transition: ease .5s;
+    margin: 1.2rem 0;
 }
 
 #modalMenu ul li a {
-    color: #fff;
+    color: #f4fae9;
     font-size: 60px;
     text-decoration: none;
+    transition: ease .3s;
+    -webkit-transition: ease .3s;
+    -moz-transition: ease .3s;
+    -ms-transition: ease .3s;
+    -o-transition: ease .3s;
 }
 
-section {
+#modalMenu ul li:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+#modalMenu ul li:hover a {
+    color: #dd0909;
+}
+
+body {
     background: #f4fae9;
 }
 
@@ -125,11 +148,12 @@ section {
     font-size: 130px;
     position: absolute;
     top: 0;
-    left: 46%;
+    left: 48%;
+    z-index: 1;
 }
 
 .home img.text {
-    width: 445px;
+    width: 33%;
 }
 
 .about video,
@@ -137,7 +161,7 @@ section {
     width: 100%;
 }
 
-.concepto .col-md-11 h2 {
+.concepto .col-lg-11 h2 {
     font-size: 170px;
     color: #dd0909;
     line-height: 1;
@@ -157,7 +181,21 @@ section {
 
 .contacto .redes img {
     width: 70px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
 }
+
+.contacto .redes img:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
 
 .contacto input,
 .contacto textarea {
@@ -181,4 +219,40 @@ section {
 
 ::placeholder {
     color: #fff !important;
+}
+
+@media(max-width: 991px) {
+    .home img.text {
+        width: 630px;
+    }
+}
+
+
+@media(max-width: 767px) {
+    .home h1 {
+        font-size: 110px;
+        top: 0px;
+        left: 40%;
+    }
+
+    .concepto .col-lg-11 h2 {
+        font-size: 60px;
+        letter-spacing: 5px;
+    }
+
+    h2.d-lg-none {
+        font-size: 20px;
+    }
+
+    .form-check-label {
+        font-size: 10px;
+    }
+
+    .contacto .redes img {
+        width: 40px;
+    }
+
+    #modalMenu ul li a {
+        font-size: 40px;
+    }
 }
