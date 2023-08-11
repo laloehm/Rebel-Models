@@ -179,6 +179,20 @@ section {
     z-index: 1;
 }
 
+.carrera h2,
+.carrera p {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.carrera h2 {
+    font-weight: 900;
+}
+
+.carrera p {
+    font-weight: 700;
+}
+
 .about video,
 .concepto video {
     width: 100%;
